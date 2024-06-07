@@ -2,7 +2,8 @@ import * as formidable from 'formidable';
 import fs from "fs";
 import { NextResponse } from 'next/server';
 import { Readable } from 'stream';
-const pinataSDK = require("@pinata/sdk");
+import pinataSDK from "@pinata/sdk";
+
 const pinata = new pinataSDK({ pinataJWTKey: process.env.NEXT_PUBLIC_PINATA_API_KEY });
 
 export const config = {
